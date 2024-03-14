@@ -40,7 +40,7 @@ class Plants(Resource):
         
         response_dict=new_plant.to_dict()
         
-        response=make_response(jsonify(response_dict), 200)
+        response=make_response(jsonify(response_dict), 201)
         return response
         
 api.add_resource(Plants,'/plants')
